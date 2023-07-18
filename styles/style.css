@@ -6,6 +6,7 @@
   font-size: 16px;
   line-height: 20px;
 }
+
 .header {
   display: flex;
   flex-direction: column;
@@ -16,14 +17,17 @@
   position: relative;
   box-sizing: border-box;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
 }
+
 .nav__logo {
   width: 57px;
   height: 80px;
 }
+
 .nav__links {
   display: flex;
   margin: 8px 0 0;
@@ -31,6 +35,7 @@
   padding: 0;
   column-gap: 20px;
 }
+
 .nav__link {
   color: #000000;
   text-decoration: none;
@@ -40,26 +45,34 @@
 .nav__link:hover {
   color: #1f69c9;
 }
+
 .header__title {
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
   max-width: 601px;
   margin: 128px 0 0 0;
+  position: relative;
+  z-index: 1;
 }
+
 .header__description {
   font-size: 20px;
   line-height: 30px;
   max-width: 532px;
   margin: 32px 0 0 0;
-}
-.header__image {
+  position: relative;
   z-index: 1;
+}
+
+.header__image {
+  z-index: 0;
   position: absolute;
   top: 135px;
   right: 20px;
   max-width: 636px;
 }
+
 .header__footer {
   margin-top: auto;
   width: 100%;
@@ -68,6 +81,7 @@
   justify-content: space-between;
   box-sizing: border-box;
 }
+
 .header__link {
   color: #2f80ed;
   text-decoration: none;
@@ -81,6 +95,7 @@
   margin: 0;
   color: #838383;
 }
+
 .events {
   padding: 100px 0 120px 80px;
   display: flex;
@@ -89,30 +104,36 @@
   box-sizing: border-box;
   background-color: #f2f2f2;
 }
+
 .events__content {
   flex-basis: 580px;
 }
+
 .events__heading {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   margin: 0;
 }
+
 .events__title {
   font-size: 44px;
   font-weight: 500;
   line-height: 52px;
   margin: 32px 0 0;
 }
+
 .events__info-section {
   margin-top: 32px;
 }
+
 .event-info__item {
   display: flex;
   align-items: center;
   margin-bottom: 4px;
   font-weight: 500;
 }
+
 .event-info__icon {
   background-repeat: no-repeat;
   background-position: center;
@@ -120,21 +141,26 @@
   width: 24px;
   height: 24px;
 }
+
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
 }
+
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
 }
+
 .event-info__text {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   margin: 0;
 }
+
 .events__description {
   margin: 40px 0 60px;
 }
+
 .events__more {
   color: #2f80ed;
   text-decoration: none;
@@ -151,9 +177,11 @@
   max-width: 780px;
   position: relative;
 }
+
 .events__image {
   max-width: 100%;
 }
+
 .person {
   position: absolute;
   display: flex;
@@ -161,45 +189,56 @@
   flex-direction: column;
   gap: 10px;
 }
+
 .person_name_feynman {
   top: -30px;
   left: 319px;
 }
+
 .person_name_burbidge {
   top: 96px;
   right: 125px;
 }
+
 .person_name_cannon {
   bottom: 18px;
   right: 216px;
 }
+
 .person_name_mitchell {
   bottom: 82px;
   left: 142px;
 }
+
 .person_name_tarter {
   top: 79px;
   left: 159px;
 }
+
 .person__image {
   max-width: 100%;
 }
 .person__image_size_l {
   width: 140px;
 }
+
 .person__image_size_m {
   width: 100px;
 }
+
 .person__image_size_s {
   width: 80px;
 }
+
 .person__caption {
   text-align: center;
   font-size: 14px;
   margin: 0;
 }
+
 .staff {
   padding: 100px 0 140px;
+  background-size: cover;
   background-image: url(../images/staff_picks_background.jpg);
 }
 
@@ -230,6 +269,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
+  padding-bottom: 0;
 }
 .card {
   background-color: #fff;
@@ -289,10 +329,8 @@
   margin: 100px 0 0;
   display: flex;
   flex-basis: auto;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
   gap: 40px;
 }
 
